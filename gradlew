@@ -1,8 +1,0 @@
-#!/bin/sh
-# Gradle start up script for UN*X
-if command -v gradle >/dev/null 2>&1; then
-    exec gradle "$@"
-fi
-APP_HOME=$( cd "${0%/*}" && pwd -P ) || exit
-CLASSPATH=$APP_HOME/gradle/wrapper/gradle-wrapper.jar
-exec java -Xmx64m -Xms64m -classpath "$CLASSPATH" org.gradle.wrapper.GradleWrapperMain "$@"
